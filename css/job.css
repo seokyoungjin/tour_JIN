@@ -1,0 +1,344 @@
+@import url('./common.css');
+
+main{
+    border-bottom: 1px solid #000;
+    border-top: 1px solid;
+    background:rgba(204, 204, 204, 0.8)
+}
+
+.header-bojo{
+    width: 1400px;
+    padding: 10px;
+    margin: 0 auto; 
+}
+.header-bojo > ul {
+    width: 310px;
+    display:flex;
+    /* justify-content: space-between */
+ 
+    
+
+    /* border: 1px solid #000; */
+}
+.header-bojo > ul > li {
+    border-right: 1px solid #000;
+    padding: 0 40px;
+}
+.header-bojo > ul > li:nth-child(1){
+    border-left: 1px solid #000;
+}
+.header-bojo > ul > li:nth-child(2){
+    display: flex;
+    /* border: 1px solid #000; */
+    
+}
+
+.header-bojo > ul > li > p {
+    padding-right: 10px;
+}
+
+.header-bojo > ul > li > a {}
+.header-bojo > ul > li > a > img{
+    width: 70%;
+}
+/* contents-01 */
+
+.contents-01 {
+    width: 100%;
+    padding-top: 80px;
+}
+.contents-01 > div {
+    width: 1400px ; margin: 0 auto;
+    position: relative;
+}
+.contents-01 > div > h2 {
+    text-align: center;  padding-bottom: 50px;
+    font-size: 36px;
+}
+.contents-01 > div >h2::after{
+    content: '';
+    width: 100px;
+    border-bottom: 1px solid #000;
+    display: block;
+    margin: 0 auto;
+    padding-top:10px;
+}
+.contents-01 > div > figure {}
+.contents-01 > div > figure > img {
+    width: 100%;
+}
+.contents-01 > div > figcaption {
+    border: 1px solid white;
+    width: 450px; padding: 30px 20px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.6;
+    position: absolute; top: 40%;
+    color: white;
+    background:rgba(0,0,204,1.8);
+}
+/* 컨텐츠 2번 */
+.contents-02 {
+    width: 100%; padding: 80px;    
+}
+.contents-02 >.txt-1 {
+    width: 1400px;  margin: 0 auto;
+    text-align: center;
+}
+.txt-1 > div{}
+.txt-1 > div > h2 {
+    font-size: 36px;
+}
+.txt-1 > div >h2::after{
+    content: '';
+    width: 200px;
+    display: block;
+    border-bottom: 1px solid #000;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.txt-1 > div > p {
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+.txt-2{
+    padding-top: 80px;
+}
+.txt-2 > ul {
+    display: flex;
+    justify-content: space-between;
+}
+.txt-2 > ul > li {}
+.txt-2 > ul > li > figure {}
+.txt-2 > ul > li > figure > img {}
+.txt-2 > ul > li > figcaption {
+    padding: 30px;  font-weight: bold;
+        
+} 
+.txt-2 > ul > li > p {
+    line-height: 1.6;
+}
+/* 컨텐츠 03 번 */
+.contents-03{
+    width: 100%; padding-top: 80px;
+}
+.contents-03 > .txt-10{
+    width: 1400px;  margin: 0 auto;
+}
+.txt-10 >div {
+    text-align: center;
+}
+.txt-10 >h2 {
+    font-size: 36px;
+    padding-top: 80px;
+}
+.txt-10 > div>h2::after{
+    content: '';
+    width: 120px;
+    display: block;
+    border-bottom: 1px solid #000;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.txt-20{
+    padding-top: 80px;
+}
+.txt-20 >ul {
+    display: flex;  justify-content: space-between;
+    align-items: center;
+}
+.txt-20 > ul > li {}
+.txt-20 > ul > li :nth-child(3) > p {
+    padding-bottom: 20px;
+}
+.txt-20 > ul > li >figure{}
+.txt-20 > ul > li >figure> img{}
+.txt-20 > ul > li > figcaption{
+    font-weight: bold;  padding: 30px;
+}
+.txt-20 > ul > li > p{
+    line-height: 1.6;
+}
+
+
+.txt-30{
+    padding-top: 80px;
+}
+.txt-30 > ul {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.txt-30 > ul > li {}
+.txt-30 > ul > li > figure{}
+.txt-30 > ul > li > figure > img{}
+.txt-30 > ul > li > figcaption {
+    font-weight: bold;  padding: 30px;
+}
+.txt-30 > ul > li > p {
+    line-height: 1.6;
+}
+/* 컨텐츠 04 번  */
+.contents-04{
+    width: 100%;    padding-top: 80px;
+}
+.contents-04 > .txt-01{}
+.txt-01 > div {
+    position: relative;
+}
+.txt-01 > div > h2{
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 36px;
+}
+.txt-01 > div > h2::after{
+    content: '';
+    width: 120px;
+    display: block;
+    border-bottom: 1px solid #000;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.txt-01 > div > figure {}
+.txt-01 > div > figure >img{}
+.txt-01 > div > p {
+    border: 1px solid #000;
+    width: 1400px;
+    /* margin: 0 auto; */
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+    background: #110101;
+    color: #fff;
+    position: absolute;
+    top: 16%;
+    margin-left: 10%;
+}
+.txt-01 > div > p > span{
+    font-weight: bold;
+    font-size: 24px;
+    padding: 20px;
+    color: #fff;
+}
+/* 컨텐츠 05 번 */
+.contents-05{
+    width: 100%; padding-top: 80px;
+    background: 
+}
+.contents-05 >.txt{
+    width: 1400px;  margin: 0 auto;
+    
+}
+.txt > div {}
+.txt > div > h2{
+    text-align: center;
+    padding-bottom: 100px;
+    font-size: 36px;
+}
+.txt > div > h2::after{
+    content: '';
+    width: 200px;
+    display: block;
+    border-bottom: 1px solid #000;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.txt > div > figure{
+    margin-left: 20%;
+}
+.txt > div > figure >img{
+    width: 100%;
+}
+/* 컨텐츠 06번*/
+.contents-06{
+    width: 100%; padding-top: 80px;
+}
+.contents-06 >.txt-010{
+    width: 1400px; margin: 0 auto;
+}
+.txt-010> div{}
+.txt-010> div > h2 {
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 80px;
+}
+.txt-010 > div > h2::after{
+    content: '';
+    width: 160px;
+    display: block;
+    border-bottom: 1px solid #000;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.txt-010 > div > ul {
+    display: flex;  justify-content: space-between;
+}
+.txt-010 > div > ul > li {
+    border: 1px solid #000;
+    /* padding: 5%; */
+    width: 23%;
+    
+    text-align: center;
+    position: relative;
+}
+.txt-010 > div > ul > li > p{
+    background: #0467FB;
+    color: #fff;
+    padding: 50px;
+    font-size: 24px;
+}
+.txt-010 > div > ul > li > span {
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+}
+/* 컨텐츠 07번 */
+
+.contents-07{
+    width: 100%; padding: 80px;
+}
+.contents-07 > .txt-0601{
+    width: 1400px ;  margin: 0 auto;
+}
+.txt-0601 > h2{
+    text-align: center;
+    font-size: 36px;
+}
+.txt-0601 > h2::after{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    border-bottom: 1px solid #000;
+    width: 120px;
+    padding-top: 20px;
+
+}
+.txt-0601 > ul {
+    padding-top: 80px;
+    display: flex; justify-content: space-between;
+    
+    line-height: 1.6;
+}
+.txt-0601 > ul > li {
+    border: 1px solid #000;
+    width:23%; 
+    background:#f0ffff;
+}
+.txt-0601 > ul > li > p {
+    font-size: 20px;
+    padding: 10%;
+    counter-increment: list-number ;
+}
+.txt-0601 > ul > li > p::before{
+    content: counter(list-number)".";
+    padding: 0 10px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+.txt-0601 > ul > li  span{
+    font-size: 20px;
+    display: inline-block;
+    width: 80%;
+}
