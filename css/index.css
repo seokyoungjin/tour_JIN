@@ -1,0 +1,366 @@
+@import url('./common.css');    
+
+/* 메인페이지 Main Main Main Main Main Main Main Main Main Main Main Main Main Main Main Main */
+
+.visual{
+    width: 100%;    
+    position: relative;
+    
+}
+.visual > img {
+    width: 100%;
+}
+.visual > div {
+    border: 2px solid #000;
+    width: 650px; 
+    position: absolute; left:50%; top:65%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px ;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    border-radius: 5%;
+}
+.visual > div > b {
+    color: #FFFCFC;
+    font-size: 36px;
+    letter-spacing: 2px;
+    line-height: 1.4;
+    /* 글자 글자 행간 조절하기- line- height 할때는 height값이 잇으면 안된다 
+        1 = 100% 를 말한다
+    */
+}
+.visual > div > p {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top:30px;
+    letter-spacing: 1px;
+    /* 글자 글자 행간 조절하기  */
+}
+/* 1번 단락.txt-1 .txt-1 .txt-1 .txt-1 .txt-1 .txt-1 .txt-1 .txt-1 */
+.txt-1 {}
+.tittle{
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 70px;
+}
+.txt-1 > .tittle > h2 {
+    margin-bottom:30px;
+    font-size: 36px;
+}
+.txt-1 > .tittle > h2::after{
+    content: '';
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-bottom: 1px solid #000;
+}
+.txt-1 > .tittle > p {
+    font-size: 20px;
+}
+.txt-1 > div {
+    width: 100%;
+    padding-bottom: 130px;
+    /* line-height: ; */
+}
+.txt-1 > div > ul {
+    width: 140  0px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+}
+.txt-1 > div > ul > li {
+    text-align: center;
+    width: 300px;
+    
+}
+.txt-1 > div > ul > li > figure {}
+.txt-1 > div > ul > li > figure > img {
+    margin-bottom: 40px;
+}
+.txt-1 > div > ul > li > figure > figcaption {
+    font: bold; font-size: 24px;
+    margin-bottom: 20px;
+}
+.txt-1 > div > ul > li > figure > p {}
+
+/* 홍보영상 2번 단락 */
+.txt-2{
+    padding: 100px 0;
+    background-color:#f0f8ff;
+}
+.txt-2 > .txt-3 {
+    width: 1400px;
+    margin: 0 auto;
+    position: relative;
+
+}
+.txt-2 > .txt-3 > h2 {
+    text-align:center;
+    /* margin: 30px 0; */
+    font-size: 36px;
+    padding-bottom: 40px;
+}
+.txt-2 > .txt-3 > h2::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    border-bottom: 1px solid #000;
+    padding-top: 20px;
+}
+.txt-2 > .txt-3 > ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+    
+.txt-2 > .txt-3 > ul > li {
+    width: 30%;
+}
+.txt-2  > .txt-3 > ul > li > img{
+    width: 100%;
+}
+
+
+/* 동영상 클릭하면 연결되는곳 */
+ .vdo{
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed; left: 0; top:0;
+    z-index: 999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+.vdo iframe {
+   
+}
+
+.vdo .close {
+}    
+    /* padding: 0 170px; */
+
+.vdo .close > button{
+   width: 560px;
+   border: 0;
+}
+
+    
+.txt-2  .arrow{
+    display: flex;
+    justify-content: space-between;
+}
+.txt-2  .arrow > a {
+    position: absolute;  top:50%;
+    width: 50px; height: 50px;
+ 
+}
+.txt-2 > .txt-3 > .arrow > a:nth-child(1){
+    transform: translate(-100px, 0);
+    left: 0;
+}
+.txt-2 > .txt-3 > .arrow > a:nth-child(2){
+    transform: translate(100px,0);
+    right: 0;
+}
+.txt-2  .arrow > a > img {
+} */
+
+
+/* 3번 단락  .txt-4 .txt-4 .txt-4 .txt-4 .txt-4 .txt-4 .txt-4 */
+
+/* ceo 인사말 */
+.txt-4{
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    
+    
+}
+.txt-4 > .ing {
+    width:1400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.txt-4 > .ing > .ceo{
+    width: 700px;
+    }
+.txt-4 > .ing > .ceo > h2{
+    padding-bottom: 20px;
+}
+.txt-4 > .ing > .ceo > figure{
+    border: 1px solid #000;
+    display:flex;
+    justify-content: space-between;
+    
+}
+.txt-4 > .ing > .ceo > figure > img {
+    width: 30%;
+}
+.txt-4 > .ing >.ceo > figure > p {
+    font-size: 20px;
+    line-height: 1.6;
+    width: 55%;
+    height: 284px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+/* QNA  */
+.qna{
+    width:700px;    
+    padding-left: 110px;
+}
+
+.qna > h2{
+    padding-bottom: 20px;
+}
+.qna > figure {
+    position: relative;
+}
+.qna > figure > img {}
+.qna > figure > div {
+    border: 1px solid #000;
+    background-color: rgba(145, 145, 145, 0.9);
+    position: absolute; top: 0; 
+    color: white;
+    width: 210px;
+    height: 284px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.1;
+}
+
+/* 3번 단락 일자리 보도 자료 / 사회활동 현황 / 신규 채용 공고  */
+
+.work-job {
+    width: 100%;
+    background-color: white;
+    padding: 100px 0;
+}
+.work-job > ul {
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.work-job > ul > li {
+    border-right: 1px solid #000;
+    padding: 50px 100px;
+}
+.work-job > ul > li:nth-child(3){
+    border-right: 0;
+}
+/* .wokr-job > ul > li:nth-child(3){
+    border-right: none;
+} */
+/* .work-job > ul > li::after{
+    content: "";
+    float: right;
+    display: block;
+    width: 2px; height: 290px;
+    background-color: #000000;
+}
+.work-job > ul > li:last-child{
+    content: "";
+} */
+    
+.work-job > ul > li > b {
+    font-size: 36px;    
+}
+.work-job > ul > li > p {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 80px;    
+}
+.work-job > ul > li > a{}
+
+/* 걸어온 길 ------------------------------------------------------------------ */
+.content{
+    background-color: #f0f8ff;
+    padding: 100px 0;
+    width: 100%;    
+}
+.content > .content2 {
+    width: 1400px;
+    text-align: center;
+    padding-bottom: 80px;
+    margin: 0 auto;
+}
+.content > .content2 > h2 {
+    padding-bottom: 30px;
+    font-size: 36px;
+}
+.content > .content2 > h2{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    border-bottom: 1px solid #000;
+    /* padding-top: 10px; */
+}
+.content > .content2 > p {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.content > .content3 {
+    position: relative; 
+}
+.content > .content3 > ul {
+    display: flex; justify-content: space-between;  
+    width: 1400px;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.content > .content3 > ul > li {
+    border: 2px solid #000;
+    padding: 100px;
+    border-radius: 50%;
+    background-color:white
+    
+}
+.content > .content3 > ul > li > figure {   
+}
+.content > .content3 > ul > li > figure > img {}
+.content > .content3 > ul > li > figure > figcaption {
+    padding-top: 20px;
+}
+
+.leftright{}
+.leftright > a {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 40%;
+}   
+.content3 >   .leftright > a:nth-child(1){
+    left: 0;
+    transform: translate(130px,0);
+}
+.content3 >   .leftright > a:nth-child(2){
+    right: 0;
+    transform: translate(-130px,0);
+    
+}
+
+
+
+/*==============================================================================
+=========================================mobli==================================
+=================================================================================*/
+
+@media (max-width:767px){
+
+}
