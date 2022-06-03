@@ -1,0 +1,357 @@
+@import url('./common.css');    
+
+main{
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    background:#f0f8ff;
+}
+
+.header-bojo{
+    width: 1400px;
+    padding: 10px;
+    margin: 0 auto; 
+}
+.header-bojo > ul {
+    width: 300px;
+    display:flex;
+    /* justify-content: space-between */
+ 
+    
+
+    /* border: 1px solid #000; */
+}
+.header-bojo > ul > li {
+    border-right: 1px solid #000;
+    padding: 0 40px;
+}
+.header-bojo > ul > li:nth-child(1){
+    border-left: 1px solid #000;
+}
+.header-bojo > ul > li:nth-child(2){
+    display: flex;
+    /* border: 1px solid #000; */
+}
+
+.header-bojo > ul > li > p {
+    padding-right: 10px;
+}
+
+.header-bojo > ul > li > a {
+    text-align: center;
+}
+.header-bojo > ul > li > a > img{
+    width: 70%;
+}
+
+/* 컨텐츠 01 번 */
+.contents {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    /* padding-left: 370px; */
+}
+.main-contents {
+    width: 1400px;
+    margin: 0 auto;
+    
+}
+.main-contents >h2{
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.main-contents > h2::after {
+    content: '';
+    border-bottom: 1px solid #000;
+    width: 180px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+.txt-1{
+    position: relative;
+}
+.txt-1 > figure {
+    width: 1400px;
+    margin: 0 auto;
+    /* box-shadow: -100px 120px 20px 20px rgb(0 0 0 / 80%); */
+}
+.txt-1 > figure > img {
+    width: 100%;
+    
+}
+.txt-1 > p {
+    width: 590px;
+    border: 1px solid #000;
+    padding: 40px;
+    font-size: 24px;
+    text-align: center;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    box-lines: 1.6;
+    position: absolute; top: 30%;
+    line-height: 1.6;
+}
+
+/* 컨텐츠 02 번 */
+.contents-02{ 
+    width: 1400px;
+    padding-bottom: 100px;
+    padding-top: 130px;
+    margin: 0 auto;
+}
+.txt-2 {
+    text-align: center;
+}
+.txt-2 > h2 {
+    font-size: 36px;
+}
+.txt-2 > h2::after{
+    content: '';
+    border-bottom: 1px solid #000;
+    width: 180px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.txt-2 > p {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+
+.txt-3 {}
+.txt-3 > ul {
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+}
+.txt-3 > ul > li {}
+.txt-3 > ul > li > figure {}
+.txt-3 > ul > li > figure >img {}
+.txt-3 > ul > li > figcaption {
+    text-align: center;
+    padding: 20px;}
+.txt-3 > ul > li > p {
+    text-align: center;
+}
+
+/* 컨텐츠 03 번 */
+.contents-03{}
+.contents-03 > p {
+    padding-bottom: 50px;
+}
+.contents-03 > p > img {
+    display: block;
+    margin: 0 auto;
+}
+.contents-03 > .visual{
+    position: relative;
+    width: 1400px;
+    margin: 0 auto;
+    padding-bottom: 250px;
+    
+}
+.contents-03 > .visual >figure {
+    width: 560px;
+    margin: 0 auto;    
+    box-shadow: -100px 100px 0px 0px #e3dcdc;
+    position: relative;
+}
+
+.contents-03 > .visual > figure > img {
+    /* display: block;
+    margin: 0 auto; */
+    
+}
+
+.contents-03 > .visual > figure >.txt-4 {
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    width: 570px;
+
+}
+.contents-03 > .visual > figure >.txt-4 > p {
+    font-size: 36px;
+    padding-bottom: 20px;
+}
+.contents-03 > .visual > figure >.txt-4 > span {
+    font-size: 24px;
+}
+
+/* 콘텐츠 04 번  */
+
+.contents-04{
+    background: #f0f8ff;
+    padding-top: 50px;
+    width: 100%;
+    padding-bottom: 90px;
+}
+
+.contents-04 > div{
+    width: 1400px;
+    margin:0 auto;
+}
+.contents-04 > div > h2 {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 36px;
+}
+.contents-04 > div > h2::after{
+    content: '';
+    border-bottom: 1px solid #000;
+    width: 100px;
+    display: block; 
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+.visual-02{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.txt-5 {}
+.txt-5 > ul {}
+.txt-5 > ul > li {
+   
+    
+}
+.txt-5 > ul > li > strong{
+    font-size: 20px;
+}
+.txt-5 > ul > li > p {
+    font-size: 20px;
+    padding: 15px;   line-height: 1.6;
+    
+}
+
+.visual-03 {}
+.visual-03 > figure {
+    width: 470px;
+    box-shadow: -80px 80px 0px 0px #e3dcdc;
+}
+.visual-03 > figure > img {}
+
+/* 콘텐츠 05번 */
+
+.contents-05 {
+    /* background:rgba(204, 204, 204, 0.8); */
+    width: 100%;    
+    padding-top: 50px;
+    padding-bottom: 90px;
+    margin: 140px 0;
+    
+    /* background:#C4C4C4; */
+}
+.contents-05 > div{
+    width: 1400px; margin: 0 auto;
+    
+}
+.contents-05 >div > h2 {
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.contents-05 > div >h2::after{
+    content: '';
+    border-bottom: 1px solid #000;
+    width: 180px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+.visual-03 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.visual-03 > .txt-6 {}
+.visual-03 > .txt-6 > ul {}
+.visual-03 > .txt-6 > ul > li {}
+.visual-03 > .txt-6 > ul > li > strong {
+    font-size: 24px;
+}
+.visual-03 > .txt-6 > ul > li > p {
+    
+    font-size: 20px;
+    padding: 15px;
+    line-height: 1.6;
+}
+
+
+.visual-03 > .visual-04 {}
+.visual-04 > figure {
+    width: 350px;
+    box-shadow: -70px 70px 0px 0px #e3dcdc;
+}
+
+.visual-04 > figure > img {}
+
+/* 컨텐츠 06 번  */
+
+.contents-06{
+    width: 100%;
+    padding-top: 50px;
+    background: #f0f8ff;
+    
+}
+.contents-06 > div > h2 {
+    padding-bottom: 50px;
+    text-align: center;
+    width: 1400px;
+    margin: 0 auto;
+    font-size: 36px;
+}
+.contents-06 > div > h2::after{
+    content: '';
+    border-bottom: 1px solid #000;
+    width: 30px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.last-visual {
+    width: 1400px;
+    margin: 0 auto;
+}
+.last-visual > figure {}
+.last-visual > figure > img {
+    width: 100%;
+}
+
+.last-visual > figure >.txt-7 {
+    padding-top: 20px;
+    width: 100%;
+    /* background: rgba(192,192,192,0.5); */
+}
+
+.last-visual >  figure >.txt-7 > ul {}
+.last-visual >  figure >.txt-7 > ul > li{
+        padding-bottom: 20px;    padding-bottom: 20px;
+        position: relative;
+        padding-left: 50px;
+    
+}
+.last-visual >  figure >.txt-7 > ul > li > figure {
+    position: absolute; top: 0; left: 0;
+    /* padding: 30px;
+     */
+}
+.last-visual >  figure >.txt-7 > ul > li > figure > img {
+    width: 100%;
+}
+.last-visual >  figure >.txt-7 > ul > li >figcaption {
+    padding-bottom: 10px;
+}
+.last-visual >  figure >.txt-7 > ul > li > p {
+    line-height: 1.6;
+}
