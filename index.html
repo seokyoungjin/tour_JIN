@@ -5,74 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="./css/index.css" rel="stylesheet" />
-    <!-- <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 항상 위에 있어야함 아니면 작동이 안됨 슬라이더 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+    <link href="./css/slick.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/c05e5a7cb3.js" crossorigin="anonymous"></script>
+    <!-- 폰트어썸 코드 아이콘을 추가하기위해 넣음 -->
+    <script src="./js/slick.min.js"  type="text/javascript" charset="utf-8"></script>
+    <script  src="./js/slide.js"></script>
+    <script defer src="./js/index.js"></script>
+    <script defer src="js/common.js"></script>
+    <!-- defer src js/common.js *****load***** 하기 위해서 필요함 defer src  -->
+
+    
+    <!-- 
+      -스크립트를 넣을때- 나의해석
+      1.스크립트 파일을 따로 만들어서 js로 모아둔다.
+      2.상단에 $ 표시를 인식할수 있도록 jquery.com/ 000000 을 배치시킨다.
+      3.min.js 는 건들지 말것
+      4.slide.js에(".")만 바꿔줄것
+      5.slick.css 앞에 선택자만 바꿔줄것
+    -->
   </head>
   <body>
     <header>
-      <div>
-        <h1>  
-          <a href="index.html"><img src="./img/main_img/logo_h1.png" /></a>
-        </h1>
-        <nav>
-          <ul>
-            <li>
-              <a href="introduction.html">소개</a>
-            </li>
-            <li>
-              <a href="business.html">경영전략</a>
-            </li>
-            <li>
-              <a href="job.html">일자리육성</a>
-            </li>
-            <li>
-              <a href="valeur.html">사회적실현가치</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="side-login">
-          <ul>
-            <li>
-              <a href="index.html"><img src="./img/main_img/logo_h02.png"></img></a>
-            </li>
-            <li>
-              <a><img src="./img/main_img/logo_h03.png"></a>
-            </li>
-            <li>
-              <a class="ba-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-              </a>
-            </li>
-          </ul>
+    </header>
+
+    <main>
+      <div class="background">
+        <div class="slide-contents">
+          <div class="slide">
+            
+            <figure><img src="./img/main_img/pc-slider02.png"></figure>
+            <figure><img src="./img/main_img/pc-slider01.png"></figure>
+            <figure><img src="./img/main_img/pc-slider03.png"></figure>
+          </div>
         </div>
       </div>
-    </header>
-    <main>
-      <figure class="visual">
-        <img src="./img/main_img/main_visual .jpg" />
-        <div>
-          <b>
-            관광으로 행복한 나라
-            <br />
-            대한민국을 만드는 대열에
-            <br />
-            여러분들을 초청합니다.
-          </b>
-          <p>
-            한국 관광공사는 한국관광산업 진흥의 중추 기관으로서
-            <br />
-            여행하기 좋은 나라를 만드는 글로벌 관광선도기관이 되기
-            <br />
-            위해 끝임없이 성장하겠습니다.
-          </p>
-        </div>
-      </figure>
 
-      <div class="txt-1">
-        <div class="tittle">
+      
+
+
+
+
+      <div class="txt-1 T1" >
+        <div class="tittle ">
           <h2>우리가 나아갈 방향과 목표</h2>
           <p>
             사회적 가치와 혁신성장과 동시 성과 창출로 국민에게 신뢰받는 관광
@@ -81,6 +60,7 @@
             사회적 가치 성과 창출과 경제활력으로 국민신뢰를 상승시키겠습니다.
           </p>
         </div>
+
         <div>
           <ul>
             <li>
@@ -125,35 +105,44 @@
             </li>
           </ul>
         </div>
-
-        <div class="txt-2">
-          <div class="txt-3">
-            <h2>관광공사유튜브</h2>
-                <ul>  
-                  <li>
-                  <img src="./img/main_img/main_play01.jpg">
-                  </li>
-                  <li>
-                    <img src="./img/main_img/main_play02.jpg">
-                  </li>
-                  <li>
-                    <img src="./img/main_img/main_play03.jpg">
-                  </li>
-                 
-                </ul>
-                <div class="arrow">
-                  <a href="#"><img src="./img/main_img/Group_01.png"></a>
-                  <a href="#"><img src="./img/main_img/Group_02.jpg"></a>
-                </div>
-              
-          </div>
-         
-          
         </div>
-      </div>
 
-      <div class="txt-4">
+
+          <div class="youtube T1">
+            <div class="youtube-contents">
+              <div class="youtube-slide">
+                <div>
+                  <a href="https://youtu.be/DejH0eQAcwE" target="_blank" tabindex="0">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                  <img src="./img/main_img/slider-01.png">
+                </div>
+                <div>
+                  <a href="https://youtu.be/CnK-c_PK4T4" target="_blank" tabindex="0">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                  <img src="./img/main_img/slider-02.png">
+                </div>
+                <div>
+                  <a href="https://youtu.be/B_X7n0AaLqA" target="_blank" tabindex="0">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                  <img src="./img/main_img/slider-03.jpg">
+                </div>
+                <div>
+                  <a href="https://youtu.be/so_NBznLTmc" target="_blank" tabindex="0">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                  <img src="./img/main_img/slider-04.png">
+                </div>
+            </div>
+          </div>
+
+        </div>
+
+      <div class="txt-4 T1">
         <div class="ing">
+
           <div class="ceo">
             <h2>ceo 인사말</h2>
             <figure>
@@ -175,9 +164,12 @@
           </div>
 
           <div class="qna">
+
             <h2>고객의 소리</h2>
+            
             <figure>
               <img src="./img/main_img/custom_01.jpg" />
+              
               <div>
                   
                     -자주묻는 질문<br>
@@ -190,8 +182,8 @@
           </div>
         </div>
       </div>
-
-      <div class="work-job">
+      
+      <div class="work-job T1">
           <ul>
               <li>
                 <b>일자리 보도 자료 </b>
@@ -212,48 +204,27 @@
           </ul>
       </div>
 
+      <div class="content T1">
 
-      <div class="content">
         <div class="content2">
           <h2>걸어온길</h2>
           <p>1961년 관광진흥법이 제정되고 난후 2019년 외래 방문객 1,750만명을 돌파하였습니다.<br>
               코로나시대가 극복하여  관광공사는 한걸음 더 도약할것입니다. 
           </p>
         </div>
+
         <div class="content3">
-          <ul>
-            <li>
-              <figure>
-                <img src="./img/main_img/main_three.jpg">
-                <figcaption>2000년<br>
-                  외래 관광객 500만 명 돌파
-              </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure><img src="./img/main_img/main_two.jpg">
-                <figcaption>2000년<br>
-                  외래 관광객 500만 명 돌파
-              </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure><img src="./img/main_img/main_one.jpg">
-                <figcaption>2000년<br>
-                  외래 관광객 500만 명 돌파
-              </figcaption></figure>
-            </li>
-            
-          </ul>
-          <div class="leftright">
-            <a href="#"><img src="./img/main_img/Group_01.png"></a>
-            <a href="#"><img src="./img/main_img/Group_02.jpg"></a>
-          </div>
+         <div class="background">
           
+         </div>
+
         </div>
-      </div>
+      
+
+     
+
     </main>
-<!-- 비디오 -->
+
     <div class="vdo">
       
       <iframe width="560" height="315" src="https://www.youtube.com/embed/B_X7n0AaLqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -264,91 +235,11 @@
     </div>
     </div>
 
-    
-<!-- 사이드 메뉴 박스 -->
-    <aside> 
-      <div class="side-meun">
-        <ul>
-          <li>
-            <a href="#">USER<br>
-                        MUNU            
-            </a>
-          </li>
-          <li>
-            <figure><img src="./img/main_img/side_box01.png"></figure>
-            <figcaption>문의사항</figcaption>
-          </li>
-          <li>
-            <figure><img src="./img/main_img/side_box.png"></figure>
-            <figcaption>오시는길</figcaption>
-          </li>
-          <li>
-            <a href="#">TOP</a>
-          </li> 
-          <li>
-            <a href="#"><img src="./img/main_img/side_box03.png"></a>
-          </li> 
-        </ul>
-      </div>
-    </aside>
+
+    <aside></aside>
+    <footer></footer>
 
 
-    <footer>
-      <section class="footer-warp">
-
-        <div class="part-1">
-        <ul class="footer-menu">
-          <li>
-            <a href="#">개인정보방침</a>
-          </li>
-          <li>
-            <a href="#">저작권정책</a>
-          </li>
-          <li>
-            <a href="#">홈페이지 불편신고</a>
-          </li>
-        </ul>
-        <div class="icon">
-          <ul>
-            <li>
-              <a href="#">instagram</a>
-            </li>
-            <li>
-              <a href="#">twitter</a>
-            </li>
-            <li>
-              <a href="#">facebook</a>
-            </li>
-            <li>
-              <a href="#">youtube</a>
-            </li>
-            <li>
-              <a href="#">sns</a>
-            </li>
-          
-          </ul>
-        </div>
-      </div>
-
-      <div class="part-2">
-        <div class="footer-txt">
-          <figure>
-            <img src="./img/main_img/footer_01.jpg">
-            <p>26464 강원도 원주시 세계로 10 TEL : (033) 738-3000 <br>
-              사업자 등록번호 : 202-81 -50707<br>
-              통신판매업신고 : 제 2009-서울중구-1234호 <br> 
-              Copyright ⓒ KTO.ALL RIGHT RESERVED.</p>
-          </figure>
-          <div class="pit">
-            <p>
-              <img src="./img/main_img/footer_02.jpg">
-              <img src="./img/main_img/footer_03.jpg">
-            </p>
-            </div>
-        </div>
-      </div>
-    </section>
-    </footer>
   
   </body>
 </html>
