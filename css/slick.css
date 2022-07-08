@@ -1,182 +1,138 @@
-.slide{
-    width:1400px;
-    margin:90px auto;
-    
+.tittle{
+    width:100%;
     /* 고정값 */
     position: relative;            
     /* 배너, 버튼, 인디게이터 모든 요소들의 최상위 부모 */
 }
-.slide .slick-list{  
+.tittle .slick-list{  
     /* 배너들의 상위요소 */
     overflow:hidden;  
 }
-.slide .slick-track{
+.tittle .slick-track{
     /* 배너 그룹 및 translateX값으로 이동(스크립트) */
 }
-.slide .slick-track::after{
+.tittle .slick-track::after{
     content:'';
     display:block;
-        clear: both;
+    clear: both;    
 }
-.slide .slick-slide{
+.tittle .slick-slide{
     /* 개별 배너 */
     margin:0; 
-    width: 1400px; height: 800px;
+    width:100%;
     float:left;
 }
-.slide .slick-slide  img{
-    height: 100%;   
-    }
+.tittle .slick-slide  img{}
 
 /* next prev */           
-.slide .slick-prev{
+.tittle .slick-prev{
     position: absolute;
-    left:0%; top:50%;
+    left:10%; bottom:3%;
     z-index: 2;
-    background: none;
-    border: none;
     font-size: 0;
-    background-image: url('../img/main_img/arrow-left.png');
-    width: 50px; height: 50px;
-    cursor:pointer;
-    opacity: 0.3;
-    
-}
-.slide .slick-next{
-    position: absolute;
-    right:0; top:50%;
-    z-index: 2;
-    background: none;
     border: none;
-    font-size: 0;
-    background-image: url('../img/main_img/arrow-right.png');
-    width: 50px; height: 50px;
-    cursor: pointer;
-    opacity: 0.3;
-}
-
-/* dots */
-.slide .slick-dots{
-    position: absolute;
-    left:0; bottom:5%;
-    width:100%;
-    text-align: center;
-
-    list-style-type: none;
-    padding:0;
-}
-.slide .slick-dots li{display: inline-block;}
-.slide .slick-dots li button{
-    width:15px; height:15px;
-    background-color: #fff;
-    border-radius: 50%;
+    background-color: transparent;
+    width: 36px; height: 36px;
     display: inline-block;
-    border:none;
-    font-size:0;
-    margin:0 10px;
-}
-.slide .slick-dots li.slick-active button{
-    background-color: #f00;
-}
-
-.youtube{
-    width: 100%; 
-    background-color: #202324;
-    padding: 7%;
-}
-.youtube-slide div > a > i{
-    color: #fff;
-    font-size: 50px;
-    position: absolute;
-    top: 15%;
-    transform: translate(-50px, 50px);
-    cursor: pointer;
-    left: 50%;
-}
-.youtube-slide div > i:nth-of-type(1){
-    background-image: url("https://youtu.be/DejH0eQAcwE");
-}
-
-
-
-.youtube-slide{
-    width: 1400px;    
-    margin:0 auto;
-
-    /* 고정값 */
-    position: relative;            
-    /* 배너, 버튼, 인디게이터 모든 요소들의 최상위 부모 */
-}
-.youtube-slide .slick-list{  
-    /* 배너들의 상위요소 */
-    overflow:hidden;  
-}
-.youtube-slide .slick-track{
-    /* 배너 그룹 및 translateX값으로 이동(스크립트) */
-}
-.youtube-slide .slick-track::after{
-   content:'';
-   display:block;
-   clear: both;
-}
-.youtube-slide .slick-slide{
-    /* 개별 배너 */
-    margin:0; 
-    width: 400px;
-    float:left;
-    padding: 0 28px;
-    position: relative;
-}
-.youtube-slide .slick-slide:hover{
-    border: 10px solid yellow;
     padding: 0;
 }
-.youtube-slide .slick-slide  img{width:100%;}
-
-/* next prev */           
-.youtube-slide .slick-prev{
-    position: absolute;
-    left:0%; top:50%;
-    z-index: 999;
-    background: none;
-    border: none;
-    font-size: 0;
-    background-image:url('../img/main_img/youtube-left.png');
-    width: 42px;    height: 42px;
-  
+.tittle .slick-prev::after{
+    content: '';
+    width:0;height:0;
+    border:8px solid transparent;
+    border-right-width: 10px;
+    border-right-color: #fff;
+    position:absolute;
+    left:-120%; top:50%;
+    transform: translate(160%,-50%);
+    opacity: .5;
 }
-.youtube-slide .slick-next{
-    position: absolute;
-    right:0; top:50%;
-    z-index: 999;
-    border: none;
-    background: none;
-    font-size: 0;
-    background-image: url('../img/main_img/youtube-right.png');
-    width: 42px; height: 42px;
-    
+.tittle .slick-prev:hover::after{
+    opacity: 1;
 }
 
-/* dots */
-.youtube-slide .slick-dots{
+.tittle .slick-prev svg circle{
+    stroke: #fff;
+    stroke-width: 2px;
+    transform-origin: 0px 0px; 
+    stroke-dashoffset: -18; 
+    stroke-dasharray: 150px;
+    transform:matrix(-1,0,0,-1,60,60);
+    opacity:0;
+    transition: .5s;
+}
+.tittle .slick-prev:hover svg circle{
+    stroke-dashoffset: 0; 
+    stroke-dasharray: 200px;
+    opacity:1;
+}
+.tittle .slick-next{
     position: absolute;
-    left:0; bottom:5%;
-    width:100%;
-    text-align: center;
-
-    list-style-type: none;
+    right:75%; bottom:3%;
+    z-index: 2;
+    font-size: 0;
+    border: none;
+    background-color:transparent;
+    width: 36px; height: 36px;
+    display: inline-block;
     padding:0;
 }
-.youtube-slide .slick-dots li{display: inline-block;}
-.youtube-slide .slick-dots li button{
-    width:15px; height:15px;
+.tittle .slick-next::after{
+    content: '';
+    width:0;height:0;
+    border:8px solid transparent;
+    border-left-width: 10px;
+    border-left-color: #fff;
+    position:absolute;
+    left:150%; top:50%;
+    transform: translate(-20%,-50%);
+    opacity: .5;
+}
+.tittle .slick-next:hover::after{
+    opacity: 1;
+}
+.tittle .slick-next svg circle{
+    stroke: #fff;
+    stroke-width: 2px;
+    transform-origin: 0px 0px; 
+    stroke-dashoffset: -18; 
+    stroke-dasharray: 150px;
+    transform:matrix(-1,0,0,-1,60,60);
+    opacity:0;
+    transition: .5s;
+}
+.tittle .slick-next:hover svg circle{
+    stroke-dashoffset: 0; 
+    stroke-dasharray: 200px;
+    opacity:1;
+}
+
+
+/* dots */
+.tittle .slick-dots{
+    position: absolute;
+    bottom: 5%;
+    width: 56%;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    left: 30%;
+}
+.tittle .slick-dots li{
+    width: 15px; height: 5px;
+    padding: 8%;
+    display: inline-block;
+    
+    opacity: 0.65;
+}
+.tittle .slick-dots li button{
     background-color: #fff;
     border-radius: 50%;
     display: inline-block;
-    border:none;
-    font-size:0;
-    margin:0 10px;
+    border: none;
+    font-size: 0;
+    margin: 0 20px;
+    padding: 4px;
 }
-.youtube-slide .slick-dots li.slick-active button{
-    background-color: #f00;
-}
+.tittle .slick-dots li.slick-active button{
+    background-color:blue;}
